@@ -1,13 +1,13 @@
 {
-  "name": "angular1.x",
+  "name": "angualar-1-app",
   "version": "1.0.0",
-  "description": "Angular demo app",
+  "description": "Angular 1 demo app",
   "main": "js/main.js",
   "scripts": {
     "start": "httpster -d ./dist",
     "build": "rimraf dist && webpack"
   },
-  "author": "",
+  "author": "Jyasveer Gotta",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -38,7 +38,6 @@
     "angular": "^1.6.4",
     "@uirouter/angularjs": "^1.0.3",
     "bootstrap-sass": "^3.3.7",
-    "httpster": "^1.0.3",
     "lodash": "^4.17.4"
   }
 }
