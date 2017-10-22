@@ -1,0 +1,19 @@
+{
+  "name": "angualar-1-app-non-modular",
+  "version": "1.0.0",
+  "description": "Angular 1 demo app with no modular architecture",
+  "main": "js/main.js",
+  "scripts": {
+    "start": "httpster -d ../angular-app-non-modular"
+  },
+  "author": "Jyasveer Gotta",
+  "license": "ISC",
+  "devDependencies": {
+    "httpster": "^1.0.3"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.3",
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7"
+  }
+}

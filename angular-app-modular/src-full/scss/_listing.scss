@@ -1,0 +1,21 @@
+listing-component, .listing-component {
+    .alert-message {
+        padding: 10px;
+        background-color: cyan;
+        position: relative;
+
+        i {
+            position: absolute;
+            right: 5px;
+            top: 15px;
+            cursor: pointer;
+        }
+    }
+
+    .sort-buttons {
+        i {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    }
+}
