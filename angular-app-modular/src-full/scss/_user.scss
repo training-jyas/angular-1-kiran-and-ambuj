@@ -1,0 +1,27 @@
+listing-component {
+    .user-card {
+        text-align: center;
+        .user-image {
+            font-size: 50px;
+
+            &.male {
+                color: blue;
+            }
+
+            &.female {
+                color: pink;
+            }
+        }
+
+        .user-actions {
+            i {
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            a {
+                margin-right: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}

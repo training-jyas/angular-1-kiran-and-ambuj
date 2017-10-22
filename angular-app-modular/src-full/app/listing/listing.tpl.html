@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h2>List of Users</h2>
+                </div>
+                <div class="col-md-12 col-sm-12" ng-if="$ctrl.message">
+                    <div class="alert-message">
+                        <i class="glyphicon glyphicon-remove" ng-click="$ctrl.closeAlert()"></i>
+                        <span><b ng-bind="$ctrl.message"></b></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-sm-12" ng-if="$ctrl.userService.loggedInUser">
+            <div class="sort-buttons">
+                Sort By:
+                <i class="glyphicon glyphicon-arrow-up" ng-click="$ctrl.sort('asc')" title="sort by ascending"></i>
+                <i class="glyphicon glyphicon-arrow-down" ng-click="$ctrl.sort('desc')" title="sort by descending"></i>
+                Click number: <span ng-bind="$ctrl.numOfTimesUserIsClicked"></span>
+            </div>
+        </div>
+        <user ng-repeat="user in $ctrl.users" user="user" count="$ctrl.numOfTimesUserIsClicked" index="{{$index}}"></user>
+        <div class="col-md-12 col-sm-12">
+            <a ui-sref="register">Register a user</a>
+        </div>
+        <div class="col-md-12 col-sm-12">
+            <a ui-sref="login">Go to login pager</a>
+        </div>
+    </div>
+</div>

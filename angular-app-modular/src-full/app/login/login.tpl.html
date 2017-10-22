@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <div class="form">
+                <div class="form-group">
+                    <label ng-bind="$ctrl.constants.login.username"></label>
+                    <input type="text" class="form-control" ng-model="$ctrl.username">
+                </div>
+                <div class="form-group">
+                    <label ng-bind="$ctrl.constants.login.password"></label>
+                    <input type="password" class="form-control" ng-model="$ctrl.password">
+                </div>
+                <div class="form-group">
+                    <submit class="btn btn-primary" ng-click="$ctrl.submit()" ng-bind="$ctrl.constants.login.submit"></submit>
+                </div>
+                <div class="form-group">
+                    <a ui-sref="register" ng-bind="$ctrl.constants.login.create"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
